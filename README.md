@@ -1,20 +1,20 @@
 # 🏠 Real Estate Housing Price Prediction
 
-A machine learning-driven approach to help real estate investors identify undervalued properties with high return-on-investment (ROI) potential. This project compares two predictive models — Linear Regression and Random Forest — using modified California housing data from the 1990 census.
+A data-driven machine learning project designed to empower real estate investors with actionable insights. By analyzing the California Housing dataset (1990 census), this project predicts median house values and identifies undervalued properties with high ROI potential. The workflow demonstrates how predictive analytics can guide strategic investment decisions in dynamic real estate markets.
 
 ## 📊 Business Objective
 
-To determine whether machine learning can accurately predict the median house value and guide investors by:
-- Highlighting key features that influence housing prices
-- Identifying properties listed below market value
-- Supporting strategic investment decisions
+- Accurately estimate median house values using advanced regression models
+- Highlight the most influential features affecting property prices
+- Identify properties priced below market value for investment opportunities
+- Support data-driven decision-making for real estate professionals
 
 ## 🧠 Models Used
 
 - **Linear Regression**
 - **Random Forest Regression**
 
-Performance metrics evaluated:
+Performance evaluated using:
 - R² Score
 - Mean Absolute Error (MAE)
 - Mean Squared Error (MSE)
@@ -24,24 +24,23 @@ Performance metrics evaluated:
 
 - Modified **California Housing** dataset (1990 census)
 - 20,640 records × 10 features
-- Includes geographic data, housing details, income, and proximity to the ocean
-- Preprocessing steps:
-  - Imputed missing `total_bedrooms` with mean
-  - Converted categorical `ocean_proximity` into dummy variables
-  - Addressed multicollinearity via VIF analysis and column elimination
+- Features: geographic data, housing characteristics, income, ocean proximity
+- Preprocessing included:
+  - Imputation of missing values
+  - Categorical encoding (`ocean_proximity`)
+  - Multicollinearity reduction (VIF analysis)
 
-## 🔬 Key Findings
+## 🔬 Key Insights
 
-- Ocean proximity and median income are strong price indicators
+- **Median income** and **ocean proximity** are the strongest predictors of price
 - Inland homes offer more stable, lower-risk investments
-- Linear Regression slightly outperformed Random Forest across all metrics
-- No signs of overfitting: similar performance across training and testing sets
+- Linear Regression and Random Forest achieved similar performance (R² ≈ 0.65)
+- No overfitting observed; robust generalization across data splits
 
 ## 🛠️ Tools & Technologies
 
-- Python
-- Pandas, NumPy, Scikit-learn
-- Matplotlib / Seaborn (for visualization)
+- Python (Pandas, NumPy, Scikit-learn)
+- Matplotlib / Seaborn (visualization)
 - Jupyter Notebook / Google Colab
 - Git for version control
 
@@ -54,20 +53,20 @@ Performance metrics evaluated:
 
 ## ⚠️ Limitations
 
-- Dataset is from 1990 — significant changes in the real estate market may impact model accuracy
-- Inflation and modern market trends are not reflected
+- Dataset reflects 1990 market conditions; not adjusted for inflation or recent trends
+- Model performance may vary with current data
 
 ## 📌 Business Recommendations
 
-- Use the model to flag homes priced below predicted value
-- Cross-validate predictions with recent market data
-- Ocean-front properties may offer higher ROI, but also come with volatility
-- Continue refining model with updated and diversified datasets
+- Use the model to flag homes priced below predicted value for investment
+- Prioritize median income and ocean proximity in property evaluations
+- Validate predictions with up-to-date market data
+- Continuously retrain models with new datasets for improved accuracy
 
 ## 🙌 Acknowledgments
 
-Inspired by UC Irvine’s Housing dataset and adapted for educational purposes in our final project.
+Inspired by UC Irvine’s Housing dataset and developed as a capstone project for advanced data science coursework.
 
 ---
 
-Let me know if you want this in a stylized GitHub-friendly format, like with badges or preview images. I can also help you write usage instructions or set up a `requirements.txt` file if you'd like to package everything professionally.
+*For more details, see the Jupyter notebook in this repository.*
